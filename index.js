@@ -1,11 +1,15 @@
 const greeting = document.getElementById("greeting");
 const changeBack = document.getElementById("changeBack");
 const nameVar = document.getElementById("name");
+const year = document.getElementById("year");
 
 const namePrompt = prompt("Enter Your Name");
 nameVar.innerHTML = namePrompt;
 
 const hours = new Date().getHours();
+
+const yearVar = new Date().getFullYear();
+year.innerHTML = yearVar;
 
 if (hours >= 1 && hours < 12) {
     greeting.innerHTML = "Good Morning";
